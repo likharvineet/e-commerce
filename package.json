@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "workspaces": [
-    "frontend/",
-    "backend/"
+    "frontend/*",
+    "backend/*"
   ],
   "scripts": {
-    "start": "npm run start -w frontend/customer && npm run start -w backend/customer",
+    "start_customer": "npm run start -w frontend/customer && npm run start -w backend/customer",
+    "start_cms": "npm run start -w frontend/cms && npm run start -w backend/cms",
     "build": "npm run build -w frontend/customer && npm run build -w backend/customer",
     "test": "npm run test -w frontend/customer && npm run test -w backend/customer"
   },
