@@ -1,0 +1,17 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend/",
+    "backend/"
+  ],
+  "scripts": {
+    "start": "npm run start -w frontend/customer && npm run start -w backend/customer",
+    "build": "npm run build -w frontend/customer && npm run build -w backend/customer",
+    "test": "npm run test -w frontend/customer && npm run test -w backend/customer"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
